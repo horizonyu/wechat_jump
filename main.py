@@ -17,7 +17,7 @@ def jump_to_next(point1, point2):
     x1, y1 = point1; x2, y2 = point2
 #     使用勾股定理计算距离
     distance = ((x1 - x2)**2 + (y1- y2)**2)**0.5
-    # 点击位置
+    # 点击位置， 保证每一次按压的位置不同，避免反刷机制
     press_x = random.randint(0, 500) + 1
     press_y = random.randint(0, 500) + 1
     release_x = press_x
